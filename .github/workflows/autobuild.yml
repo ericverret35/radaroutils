@@ -1,9 +1,9 @@
-name: autopublish
+name:autopublish
 on:
 workflow_dispatch:
 jobs:
 build:
-runs-on: ubuntu-latest
+runs-on:ubuntu-latest
 steps:
-- name: Hello
-run: echo "it works"
+- name:Hello
+run:echo "it works"
