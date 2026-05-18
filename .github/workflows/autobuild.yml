@@ -1,9 +1,9 @@
 name:autopublish
 on
 workflow_dispatch
-jobs:
-build:
+jobs
+build
 runs-on:ubuntu-latest
-steps:
+steps
 -name:Hello
 run:echo it works
