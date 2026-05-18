@@ -4,6 +4,6 @@ workflow_dispatch
 jobs
 build
 runs-on:ubuntu-latest
-steps:
+steps
 
 run:echo it_works
