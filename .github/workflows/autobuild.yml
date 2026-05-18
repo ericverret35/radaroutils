@@ -1,7 +1,13 @@
-name:autopublish
-on
-
+name: autopublish
+on:
 workflow_dispatch:
-jobs:build:runs-on:ubuntu-latest
-steps:- name:Hello
-run:echo "it works"
+schedule:
+- cron: '0 */12 * * *'
+permissions:
+contents: write
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout
+uses: actions/checkout@v4
